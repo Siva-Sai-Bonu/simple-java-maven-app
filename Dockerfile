@@ -2,7 +2,7 @@ FROM amazoncorretto:8-alpine3.17-jre
 
 EXPOSE 8080
 
-COPY ./target/java-maven-app-*.jar app.jar
+COPY ./target/my-app*.jar app.jar
 
 WORKDIR /usr/app
 
