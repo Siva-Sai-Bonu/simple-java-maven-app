@@ -1,9 +1,9 @@
 FROM amazoncorretto:8-alpine3.17-jre
 
-WORKDIR /usr/app
+EXPOSE 8080
 
 COPY ./target/java-maven-app-*.jar app.jar
 
-EXPOSE 8080
+WORKDIR /usr/app
 
 ENTRYPOINT ["java", "-jar", "app.jar"]
